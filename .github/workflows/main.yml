@@ -13,16 +13,9 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-
-  CleanWorkdir:
-    runs-on: self-hosted
-    steps: 
-      - name: clean
-        run: rm -rf ./*
  
   Codestyle:
     runs-on: self-hosted
-    needs: CleanWorkdir
     steps:
       - uses: actions/checkout@v2
  
