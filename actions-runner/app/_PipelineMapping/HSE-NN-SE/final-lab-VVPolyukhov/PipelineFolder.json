@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "HSE-NN-SE/final-lab-VVPolyukhov",
+  "pipelineDirectory": "final-lab-VVPolyukhov",
+  "workspaceDirectory": "final-lab-VVPolyukhov/final-lab-VVPolyukhov",
+  "repositories": {
+    "HSE-NN-SE/final-lab-VVPolyukhov": {
+      "repositoryPath": "final-lab-VVPolyukhov/final-lab-VVPolyukhov",
+      "lastRunOn": "06/17/2021 22:29:24 +03:00"
+    }
+  },
+  "lastRunOn": "06/17/2021 22:37:27 +03:00"
+}

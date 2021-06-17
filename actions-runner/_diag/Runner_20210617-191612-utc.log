@@ -1,0 +1,131 @@
+[2021-06-17 19:16:12Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO HostContext] Well known config file 'Credentials': '/home/user/final-lab-VVPolyukhov/actions-runner/.credentials'
+[2021-06-17 19:16:12Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2021-06-17 19:16:12Z INFO Listener] RuntimeInformation: Linux 5.8.0-55-generic #62~20.04.1-Ubuntu SMP Wed Jun 2 08:55:04 UTC 2021.
+[2021-06-17 19:16:12Z INFO Listener] Version: 2.276.1
+[2021-06-17 19:16:12Z INFO Listener] Commit: 5effa808be96eae7f2e08d713426b8d056bddff1
+[2021-06-17 19:16:12Z INFO Listener] Culture: ru-RU
+[2021-06-17 19:16:12Z INFO Listener] UI Culture: ru-RU
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO Listener] Validating directory permissions for: '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO CommandLineParser] Parse
+[2021-06-17 19:16:12Z INFO CommandLineParser] Parsing 1 args
+[2021-06-17 19:16:12Z INFO CommandLineParser] parsing argument
+[2021-06-17 19:16:12Z INFO CommandLineParser] HasArgs: False
+[2021-06-17 19:16:12Z INFO CommandLineParser] Adding Command: run
+[2021-06-17 19:16:12Z INFO Listener] Arguments parsed
+[2021-06-17 19:16:12Z INFO Runner] ExecuteCommand
+[2021-06-17 19:16:12Z INFO ConfigurationStore] currentAssemblyLocation: /home/user/final-lab-VVPolyukhov/actions-runner/bin/Runner.Listener.dll
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] binPath: /home/user/final-lab-VVPolyukhov/actions-runner/bin
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] RootFolder: /home/user/final-lab-VVPolyukhov/actions-runner
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO HostContext] Well known config file 'Runner': '/home/user/final-lab-VVPolyukhov/actions-runner/.runner'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] ConfigFilePath: /home/user/final-lab-VVPolyukhov/actions-runner/.runner
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO HostContext] Well known config file 'Credentials': '/home/user/final-lab-VVPolyukhov/actions-runner/.credentials'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] CredFilePath: /home/user/final-lab-VVPolyukhov/actions-runner/.credentials
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/user/final-lab-VVPolyukhov/actions-runner/.credentials_migrated'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] MigratedCredFilePath: /home/user/final-lab-VVPolyukhov/actions-runner/.credentials_migrated
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO HostContext] Well known config file 'Service': '/home/user/final-lab-VVPolyukhov/actions-runner/.service'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] ServiceConfigFilePath: /home/user/final-lab-VVPolyukhov/actions-runner/.service
+[2021-06-17 19:16:12Z INFO CommandSettings] Flag 'help': 'False'
+[2021-06-17 19:16:12Z INFO CommandSettings] Flag 'version': 'False'
+[2021-06-17 19:16:12Z INFO CommandSettings] Flag 'commit': 'False'
+[2021-06-17 19:16:12Z INFO CommandSettings] Flag 'check': 'False'
+[2021-06-17 19:16:12Z INFO CommandSettings] Command 'configure': 'False'
+[2021-06-17 19:16:12Z INFO CommandSettings] Command 'remove': 'False'
+[2021-06-17 19:16:12Z INFO CommandSettings] Command 'warmup': 'False'
+[2021-06-17 19:16:12Z INFO ConfigurationManager] LoadSettings
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsConfigured()
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsConfigured: True
+[2021-06-17 19:16:12Z INFO ConfigurationManager] Is configured: True
+[2021-06-17 19:16:12Z INFO ConfigurationStore] Read setting file: 292 chars
+[2021-06-17 19:16:12Z INFO ConfigurationManager] Settings Loaded
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsServiceConfigured()
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsServiceConfigured: False
+[2021-06-17 19:16:12Z INFO CommandSettings] Command 'run': 'True'
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsConfigured()
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsConfigured: True
+[2021-06-17 19:16:12Z INFO ConfigurationManager] Is configured: True
+[2021-06-17 19:16:12Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2021-06-17 19:16:12Z INFO Runner] Set runner startup type - Manual
+[2021-06-17 19:16:12Z INFO CommandSettings] Flag 'once': 'False'
+[2021-06-17 19:16:12Z INFO Runner] RunAsync
+[2021-06-17 19:16:12Z INFO ConfigurationManager] LoadSettings
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsConfigured()
+[2021-06-17 19:16:12Z INFO ConfigurationStore] IsConfigured: True
+[2021-06-17 19:16:12Z INFO ConfigurationManager] Is configured: True
+[2021-06-17 19:16:12Z INFO ConfigurationManager] Settings Loaded
+[2021-06-17 19:16:12Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "runner",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/OmjY0MEUd91qA8nyXf29HIHTtHdnQWVcGWAg6pgXxV8xsCM2Gp",
+  "GitHubUrl": "https://github.com/HSE-NN-SE/final-lab-VVPolyukhov",
+  "WorkFolder": "app"
+}
+[2021-06-17 19:16:12Z INFO MessageListener] Loading Credentials
+[2021-06-17 19:16:12Z INFO ConfigurationStore] HasCredentials()
+[2021-06-17 19:16:12Z INFO ConfigurationStore] stored True
+[2021-06-17 19:16:12Z INFO CredentialManager] GetCredentialProvider
+[2021-06-17 19:16:12Z INFO CredentialManager] Creating type OAuth
+[2021-06-17 19:16:12Z INFO CredentialManager] Creating credential type: OAuth
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Bin': '/home/user/final-lab-VVPolyukhov/actions-runner/bin'
+[2021-06-17 19:16:12Z INFO HostContext] Well known directory 'Root': '/home/user/final-lab-VVPolyukhov/actions-runner'
+[2021-06-17 19:16:12Z INFO HostContext] Well known config file 'RSACredentials': '/home/user/final-lab-VVPolyukhov/actions-runner/.credentials_rsaparams'
+[2021-06-17 19:16:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/user/final-lab-VVPolyukhov/actions-runner/.credentials_rsaparams
+[2021-06-17 19:16:12Z INFO MessageListener] Attempt to create session.
+[2021-06-17 19:16:12Z INFO MessageListener] Connecting to the Runner Server...
+[2021-06-17 19:16:12Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-06-17 19:16:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-06-17 19:16:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-06-17 19:16:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-06-17 19:16:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-06-17 19:16:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-06-17 19:16:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-06-17 19:16:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-06-17 19:16:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-06-17 19:16:13Z INFO MessageListener] VssConnection created
+[2021-06-17 19:16:13Z INFO Terminal] WRITE LINE: 
+[2021-06-17 19:16:13Z INFO Terminal] WRITE LINE: 
+[2021-06-17 19:16:13Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 78824f4d-4b68-4297-b984-97cf8042e098
+ActivityId: b191a441-64dc-4545-a049-5214a1cbb4ce
+X-TFS-Session: a224a1d9-5f2b-40d8-a1f9-58062416ab8e
+X-VSS-E2EID: 919b6f81-9d2c-413d-9109-6a5bd35a56cd
+X-VSS-SenderDeploymentId: 6074703f-c195-632a-bd61-21691fc86fa5
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: E2CAAC77C2864819BC4FCC35BA0CF9A8 Ref B: FRAEDGE1320 Ref C: 2021-06-17T19:16:14Z
+Date: Thu, 17 Jun 2021 19:16:14 GMT
+
+[2021-06-17 19:16:13Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/user/final-lab-VVPolyukhov/actions-runner/.credentials_rsaparams
+[2021-06-17 19:16:13Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/user/final-lab-VVPolyukhov/actions-runner/.credentials_rsaparams
+[2021-06-17 19:16:14Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-06-17 19:16:14Z INFO MessageListener] Session created.
+[2021-06-17 19:16:14Z INFO Terminal] WRITE LINE: 2021-06-17 19:16:14Z: Listening for Jobs
+[2021-06-17 19:16:14Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2021-06-17 19:28:06Z INFO Terminal] WRITE LINE: Exiting...
+[2021-06-17 19:28:06Z INFO ConfigurationStore] IsServiceConfigured()
+[2021-06-17 19:28:06Z INFO ConfigurationStore] IsServiceConfigured: False
+[2021-06-17 19:28:06Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2021-06-17 19:28:06Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/OmjY0MEUd91qA8nyXf29HIHTtHdnQWVcGWAg6pgXxV8xsCM2Gp/_apis/distributedtask/pools/1/messages?sessionId=d5f90ff6-40e3-4f31-9b6f-839279b807ee has been cancelled.
+[2021-06-17 19:28:06Z INFO MessageListener] Get next message has been cancelled.
+[2021-06-17 19:28:06Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2021-06-17 19:28:06Z INFO Listener] Runner execution been cancelled.
