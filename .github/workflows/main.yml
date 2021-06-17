@@ -13,40 +13,63 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  CodeStyle:
-    # The type of runner that the job will run on
+  CleanWorkdir:
     runs-on: self-hosted
+    steps: 
+      - name: clean
+        run: rm -rf ./*
+ 
+  Codestyle:
+    runs-on: self-hosted
+    needs: CleanWorkdir
     steps:
       - uses: actions/checkout@v2
-      - name: Dependencies
-        run: |
-          sudo apt update
-          sudo apt install python3-pip -y
-          pip3 install flake8
-      - name: Codestyle
+ 
+      - name: install dependencies
+        run: pip3 install flake8
+ 
+      - name: codestyle
         run: python3 -m flake8 ./ --ignore=F401,E402
-  
+ 
+ 
   Tests:
+  
     runs-on: self-hosted
-    needs: CodeStyle
+    needs: Codestyle
     steps:
       - uses: actions/checkout@v2
+ 
       - name: Tests
         run: |
-          sudo apt update
-          sudo apt install python3-pip -y
           pip3 install -e '.[test]'
           python3 -m coverage run -m pytest
-          python3 -m coverage report
-  
+          python3 -m coverage html -d coverage_html
+ 
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-report
+          path: coverage_html
+          retention-days: 1
+ 
   Docker:
-      needs: Tests
-      runs-on: self-hosted
-      steps:
-        - uses: actions/checkout@v2
-        - name: Build Docker with app
-          run: |
-            docker build -t edan9902/app .
-            docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
-            docker push edan9902/app
+    needs: Tests
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker with app
+        run: |
+          docker build -t thereez/flask_calculator .
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker push thereez/flask_calculator
+ 
+  Deployment:
+    needs: Docker
+    runs-on: self-hosted
+    steps:
+      - name: run latest version
+        run: |
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker rm -f current_version
+          docker run -d --name current_version thereez/flask_calculator:latest
+ 
