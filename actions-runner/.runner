@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 2,
-  "agentName": "runner",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelines.actions.githubusercontent.com/OmjY0MEUd91qA8nyXf29HIHTtHdnQWVcGWAg6pgXxV8xsCM2Gp",
-  "gitHubUrl": "https://github.com/HSE-NN-SE/final-lab-VVPolyukhov",
-  "workFolder": "app"
-}
