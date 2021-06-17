@@ -40,3 +40,13 @@ jobs:
           python3 -m coverage run -m pytest
           python3 -m coverage report
   
+  Docker:
+      needs: Tests
+      runs-on: self-hosted
+      steps:
+        - uses: actions/checkout@v2
+        - name: Build Docker with app
+          run: |
+            docker build -t thereez/flask_calculator .
+            docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+            docker push thereez/flask_calculator
