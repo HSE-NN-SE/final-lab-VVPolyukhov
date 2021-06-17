@@ -47,6 +47,6 @@ jobs:
         - uses: actions/checkout@v2
         - name: Build Docker with app
           run: |
-            docker build -t thereez/flask_calculator .
+            docker build -t edan9902/app .
             docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
-            docker push thereez/flask_calculator
+            docker push edan9902/app
