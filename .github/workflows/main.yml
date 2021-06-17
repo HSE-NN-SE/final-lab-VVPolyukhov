@@ -13,6 +13,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+
   CleanWorkdir:
     runs-on: self-hosted
     steps: 
@@ -25,10 +26,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
  
-      - name: install dependencies
+      - name: Install dependencies
         run: pip3 install flake8
  
-      - name: codestyle
+      - name: CodeStyle
         run: python3 -m flake8 ./ --ignore=F401,E402
  
  
@@ -52,19 +53,19 @@ jobs:
           path: coverage_html
           retention-days: 1
  
-  Docker:
+  DockerHub:
     needs: Tests
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
-      - name: Build Docker with app
+      - name: Build Docker
         run: |
           docker build -t edan9902/app .
           docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
           docker push edan9902/app
  
   Deployment:
-    needs: Docker
+    needs: DockerHub
     runs-on: self-hosted
     steps:
       - name: run latest version
