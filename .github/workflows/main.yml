@@ -39,13 +39,4 @@ jobs:
           pip3 install -e '.[test]'
           python3 -m coverage run -m pytest
           python3 -m coverage report
-  Docker:
-    needs: Tests
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build Docker with App
-        run: |
-          docker build -t edan9902/app .
-          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push edan9902/app
+  
