@@ -70,6 +70,6 @@ jobs:
       - name: run latest version
         run: |
           docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker rm -f current_version
           docker pull edan9902/app:latest
-          docker run --rm edan9902/app:latest
- 
+          docker run -d --name current_version edan9902/app:latest
